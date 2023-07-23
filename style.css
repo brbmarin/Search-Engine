@@ -1,0 +1,101 @@
+/* 
+@files          style.css
+@author         Marin Barbaud
+@date           23/07/2023
+@modify         ~
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f8fafc;
+}
+
+img{
+    width: 200px;
+}
+
+.search-div{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    margin: 70px 0;
+    margin-bottom: 90px;
+}
+.seacrh-div p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.search-bar{
+    width: 800px;
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* 
+calc permet de faire un calcul automatique
+on prend 100% de la largeur de la search-bar et 
+on va enlever 100px. Le restant sera appliquer 
+à l'input
+*/
+.search-bar input{
+    width: calc(100% - 100px);
+    padding-left: 5px;
+    padding: 10px;
+    outline: none;
+    background-color: #f8fafc;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;
+}
+
+.search-bar button{
+    width: 100px;
+    background-color: #645cff;
+    border: #fff;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.search-result{
+    padding: 0 200px;
+    margin-bottom: 20px;
+}
+
+h3{
+    margin-top: 20px
+}
+
+h3 a{
+    color: #645cff;
+    font-size: 20px;
+}
+
+.result-link{
+    color: #31724a;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+/* Responsive */
+@media(max-width: 912px){
+    .search-bar{
+        width: 100%;
+    }
+    .search-result{
+        margin-top: -60px;
+        padding: 20px 10px;
+    }
+}
